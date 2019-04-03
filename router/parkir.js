@@ -58,6 +58,67 @@ router.get('/get_parkir/:platmobil', function(req, resp, next) {
 	});
 });
 
+// http://localhost:1337/parkir/get_tipe_mobil/SUV
+router.get('/get_tipe_mobil/:tipe', function(req, resp, next) {
+
+	var tipe = req.params.tipe;
+
+	fs.readFile('myjsonfile.json', 'utf8', function readFileCallback(err, data){
+			if (err){
+					console.log(err);
+			} else {
+				obj = JSON.parse(data); //now it an object
+
+				var res = {};
+				var summobil = 0;
+
+				obj.tabletempatparkir.forEach(function(item, index, array){
+					if (item.tipe === tipe){
+						summobil++;
+					}
+				});
+				
+				res = {
+					jumlah_kendaraan : summobil
+				}
+				
+				resp.send(res);
+
+			}
+	});
+});
+
+// http://localhost:1337/parkir/get_warna_mobil/hitam
+router.get('/get_warna_mobil/:warna', function(req, resp, next) {
+
+	var warna = req.params.warna;
+
+	fs.readFile('myjsonfile.json', 'utf8', function readFileCallback(err, data){
+			if (err){
+					console.log(err);
+			} else {
+				obj = JSON.parse(data); //now it an object
+
+				var res = {};
+				
+				const warnamobil = [];
+
+				obj.tabletempatparkir.forEach(function(item, index, array){
+					if (item.warna === warna){
+						warnamobil.push(item.platmobil);
+					}
+				});
+				
+				res = {
+					plat_nomor : warnamobil
+				}
+				
+				resp.send(res);
+
+			}
+	});
+});
+
 router.post('/post_parkir', function(req, resp) {
     var plat = req.body.plat;
     var warna = req.body.warna;
