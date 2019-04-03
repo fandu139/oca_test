@@ -1,1 +1,1 @@
-{"table":[{"id":1,"square":2},{"id":2,"square":3}],"tabletempatparkir":[{"slotparkir":"A1","platmobil":""},{"slotparkir":"A2","platmobil":""},{"slotparkir":"A3","platmobil":""},{"slotparkir":"A4","platmobil":""},{"slotparkir":"A5","platmobil":""},{"slotparkir":"A6","platmobil":""},{"slotparkir":"A7","platmobil":""},{"slotparkir":"A8","platmobil":""},{"slotparkir":"A9","platmobil":""},{"slotparkir":"A10","platmobil":""}],"tabledetailparkir":[]}
+{"tabletempatparkir":[{"ruangparkir":"A1","platmobil":"D101","warna":"Hitam","tipe":"SUV","tanggal_masuk":"2019-3-3 22:44"}]}
