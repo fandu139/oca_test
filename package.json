@@ -12,7 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "start"
+    "start": "node index.js",
+    "startnodemon": "nodemon index.js"
   },
   "repository": {
     "type": "git",

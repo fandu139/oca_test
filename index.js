@@ -58,6 +58,8 @@ app.get("/", function(req, resp){
 var parkir = require('./router/parkir');
 app.use('/parkir', parkir);
 
-app.listen(1337, function(){
-  console.log("Server sudah jalan di port 1337");
+const port = process.env.PORT || 4000;
+
+app.listen(port, function(){
+  console.log(`Server sudah jalan di port ${port}`);
 });
