@@ -1,0 +1,27 @@
+{
+  "name": "oca_test",
+  "version": "1.0.0",
+  "description": "test in oca",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fandu139/oca_test.git"
+  },
+  "author": "fandu pratama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fandu139/oca_test/issues"
+  },
+  "homepage": "https://github.com/fandu139/oca_test#readme"
+}

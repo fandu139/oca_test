@@ -18,7 +18,7 @@ var obj = {
 var json = JSON.stringify(obj);
 
 var fs = require('fs');
-fs.writeFile('myjsonfile.json', json, 'utf8');
+// fs.writeFile('myjsonfile.json', json, 'utf8');
 
 /*fs.readFile('myjsonfile.json', 'utf8', function readFileCallback(err, data){
     if (err){
